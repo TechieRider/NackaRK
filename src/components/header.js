@@ -19,14 +19,16 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <StaticImage
-      src="../images/nacka_rk_logo.png"
-      width={120}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
+        <Link to="/">
+            <StaticImage
+            src="../images/nacka_rk_logo.png"
+            width={120}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="Nacka Rugby"
+            style={{ marginBottom: `1.45rem` }}
+            />
+        </Link>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -40,8 +42,10 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
   </header>
-  <ul style={{backgroundColor: "#3B4A60", listStyleType: 'none', margin: "0 15% 0 15%", color: "white"}}>
+  <ul className="navbar">
     <li>Hem</li>
+    <li>Om oss</li>
+    <li>Vad är rugby?</li>
   </ul>
   </div>
 )

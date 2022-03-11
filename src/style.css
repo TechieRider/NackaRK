@@ -54,7 +54,8 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #b3e3ff;
+  --color-secondary: #1c5500;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -270,7 +271,7 @@ a:focus {
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
 }
@@ -330,4 +331,18 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+.navbar {
+  background-color: #3B4A60;
+  list-style-type: none;
+  margin: 0 15% 0 15%;
+  color: white;
+  height:40px;
+}
+.navbar li{
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
 }
