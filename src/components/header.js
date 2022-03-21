@@ -44,7 +44,11 @@ const Header = ({ siteTitle }) => (
   </header>
   <ul className="navbar">
     <li>Hem</li>
-    <li>Om oss</li>
+    <li>
+        <Link to="/about">
+            Om oss
+        </Link>
+    </li>
     <li>Vad är rugby?</li>
   </ul>
   </div>

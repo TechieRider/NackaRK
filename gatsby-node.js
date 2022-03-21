@@ -56,6 +56,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  const allPagesQuery = await graphql(`
+  query MyQuery {
+    allSitePage {
+      edges {
+        node {
+          path
+        }
+      }
+    }
+  }`)
+  console.log(allPagesQuery.data)
+  // allPagesQuery.forEach((page, index) => {
+  //   createPage({
+  //     path: page.data.
+  //   })
+  // })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
